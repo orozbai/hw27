@@ -1,15 +1,20 @@
+package movies;
+
+import movies.Sortable;
+
 import java.util.List;
 
 public class Overide implements Sortable {
-    private final List<Movie> movie;
+    private final List<Movie> movieList;
 
     public Overide() {
-        movie = FileServices.readFile();
+        movieList = FileServices.readFile();
     }
+
     @Override
     public List<Movie> displayMovie() {
-        for (var mov : movie) {
-        } return movie;
+        for (var m : movieList) {
+        } return movieList;
     }
 
     @Override

@@ -1,9 +1,13 @@
+package movies;
+
 import java.util.List;
 
 public class Movie {
     private String name;
     private int year;
     private String description;
+    private Director director;
+    private List<Cast> casts;
 
     public void setName(String name) {
         this.name = name;
@@ -29,8 +33,7 @@ public class Movie {
         this.casts = casts;
     }
 
-    private Director director;
-    private List<Cast> casts;
+
 
     public String getName() {
         return name;
@@ -48,8 +51,20 @@ public class Movie {
         return director;
     }
 
+//    @Override
+//    public String toString() {
+//        return String.format("Название %s, Год %d, Описание %s, Режиссер: %s", name, year, description, director.getFullName());
+//    }
+
+
     @Override
     public String toString() {
-        return String.format("Название %s, Год %d, Описание %s, Режиссер: %s",name,year,description,director.getFullName());
+        return "Movie{" +
+                "name='" + name + '\'' +
+                ", year=" + year +
+                ", description='" + description + '\'' +
+                ", director=" + director +
+                ", casts=" + casts +
+                '}';
     }
 }

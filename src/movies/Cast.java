@@ -1,3 +1,5 @@
+package movies;
+
 public class Cast {
     private String fullName;
     private String role;
@@ -20,7 +22,7 @@ public class Cast {
 
     @Override
     public String toString() {
-        return "Cast{" +
+        return "movies.Cast{" +
                 "fullName='" + fullName + '\'' +
                 ", role='" + role + '\'' +
                 '}';

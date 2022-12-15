@@ -1,5 +1,9 @@
+package movies;
+
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import movies.CollectionMovie;
+import movies.Movie;
 
 import java.util.List;
 import java.io.IOException;

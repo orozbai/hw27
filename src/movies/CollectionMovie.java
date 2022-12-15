@@ -1,3 +1,7 @@
+package movies;
+
+import movies.Movie;
+
 import java.util.List;
 
 public class CollectionMovie {
