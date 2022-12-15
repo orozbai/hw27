@@ -1,5 +1,3 @@
-package movies;
-
 public class Director {
     private String fullName;
 
