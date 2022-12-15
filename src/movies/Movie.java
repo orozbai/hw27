@@ -1,13 +1,14 @@
 package movies;
 
+import java.util.Arrays;
+
 public class Movie {
     private String name;
     private int year;
     private String description;
-    private String director;
-    private String fullName;
-    private String cast;
-    private String role;
+    private Director director;
+
+    private Cast[] cast;
 
     @Override
     public String toString() {
@@ -15,10 +16,8 @@ public class Movie {
                 "name='" + name + '\'' +
                 ", year=" + year +
                 ", description='" + description + '\'' +
-                ", director='" + director + '\'' +
-                ", fullName='" + fullName + '\'' +
-                ", cast='" + cast + '\'' +
-                ", role='" + role + '\'' +
+                ", director=" + director +
+                ", cast=" + Arrays.toString(cast) +
                 '}';
     }
 
@@ -46,35 +45,19 @@ public class Movie {
         this.description = description;
     }
 
-    public String getDirector() {
+    public Director getDirector() {
         return director;
     }
 
-    public void setDirector(String director) {
+    public void setDirector(Director director) {
         this.director = director;
     }
 
-    public String getFullName() {
-        return fullName;
-    }
-
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
-    }
-
-    public String getCast() {
+    public Cast[] getCast() {
         return cast;
     }
 
-    public void setCast(String cast) {
+    public void setCast(Cast[] cast) {
         this.cast = cast;
-    }
-
-    public String getRole() {
-        return role;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
     }
 }
