@@ -51,20 +51,19 @@ public class Movie {
         return director;
     }
 
-//    @Override
-//    public String toString() {
-//        return String.format("Название %s, Год %d, Описание %s, Режиссер: %s", name, year, description, director.getFullName());
-//    }
-
-
     @Override
     public String toString() {
-        return "Movie{" +
-                "name='" + name + '\'' +
-                ", year=" + year +
-                ", description='" + description + '\'' +
-                ", director=" + director +
-                ", casts=" + casts +
-                '}';
+        return String.format("Название %s, Год %d, Описание %s, Режиссер: %s", name, year, description, director.getFullName());
     }
+
+//    @Override
+//    public String toString() {
+//        return "Movie{" +
+//                "name='" + name + '\'' +
+//                ", year=" + year +
+//                ", description='" + description + '\'' +
+//                ", director=" + director +
+//                ", casts=" + casts +
+//                '}';
+//    }
 }
