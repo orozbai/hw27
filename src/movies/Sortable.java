@@ -1,11 +1,13 @@
 package movies;
 
-import java.util.List;
-
 public interface Sortable {
-    List<Movie> displayMovie();
-    List<Movie> movieSearch();
-    void sortInYear();
-    void sortInName();
-    void sortInProducer();
+    void displayMovie();
+    void movieSearch();
+    void sortInYearAscending();
+    void sortInNameAscending();
+    void sortInProducerAscending();
+    void sortInYearDescending();
+    void sortInNameDescending();
+    void sortInProducerDescending();
+    void searchMovieInName();
 }
